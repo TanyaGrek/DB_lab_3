@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Event editing</title>
+    <!-- Icons to support Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+<div class="main-content">
+    {{>header}}
+
+    <p>Use this page to add new event!</p>
+
+    <form id="event-edit">
+        <label>
+            Event title
+            <input placeholder="Event title" name="title">
+        </label>
+        <label>
+            Venue
+            <select id="venues" name="venue_id"></select>
+        </label>
+        <label>
+            Start date
+            <input placeholder="Start date" type="date" name="starts">
+        </label>
+        <label>
+            End date
+            <input placeholder="End date" type="date" name="ends">
+        </label>
+        <button>Add</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+
+{{>footer}}
+
+<script src="/js/settings.js"></script>
+</body>
+
+</html>

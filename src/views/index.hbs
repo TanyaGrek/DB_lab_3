@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Events</title>
+    <!-- Icons to support Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+<div class="main-content">
+    {{>header}}
+
+    <p>Use this site to get your event!</p>
+
+    <form>
+        <input placeholder="Search">
+        <button>Search</button>
+    </form>
+
+    <table id="event-list">
+
+    </table>
+
+    <p id="message"></p>
+</div>
+
+{{>footer}}
+
+<script src="/js/index.js"></script>
+</body>
+
+</html>
